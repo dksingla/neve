@@ -208,7 +208,7 @@ class Logo extends Abstract_Component {
 				'live_refresh_selector' => true,
 				'live_refresh_css_prop' => [
 					[
-						'selector' => $this->default_selector . ' .brand .nv-title-tagline-wrap',
+						'selector' => $this->default_selector . ' .brand .title-tagline',
 						'prop'     => 'color',
 						'fallback' => 'inherit',
 					],
@@ -249,7 +249,7 @@ class Logo extends Abstract_Component {
 			],
 		];
 		$css_array[] = [
-			Dynamic_Selector::KEY_SELECTOR => $this->default_selector . ' .brand .nv-title-tagline-wrap',
+			Dynamic_Selector::KEY_SELECTOR => $this->default_selector . ' .brand .title-tagline',
 			Dynamic_Selector::KEY_RULES    => [
 				\Neve\Core\Settings\Config::CSS_PROP_COLOR => $this->get_id() . '_' . self::COLOR_ID,
 			],

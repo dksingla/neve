@@ -1,26 +1,14 @@
-.show-on-focus {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: 0;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-  top: 0;
-  left: 0;
-
-  &:focus {
-    z-index: 20;
-    width: auto;
-    height: auto;
-    clip: auto;
-  }
-}
-
 a.neve-skip-link {
-  padding: $spacing-xs $spacing-sm;
-	top: 32px;
-}
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: $spacing-xs;
+	position: absolute;
+	overflow: hidden;
 
+	&:focus {
+		z-index: 20;
+		clip: auto;
+	}
+}
 
 .screen-reader-text {
 	position:absolute;

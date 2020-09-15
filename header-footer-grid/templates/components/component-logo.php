@@ -28,7 +28,7 @@ if ( get_option( 'show_on_front' ) === 'posts' && is_home() ) {
 	$wrapper_tag = 'h1';
 }
 
-$title_tagline = '<div class="nv-title-tagline-wrap">';
+$title_tagline = '<div class="nv-title-tagline-wrap title-tagline">';
 if ( $show_name ) {
 	$title_tagline .= '<' . esc_attr( $wrapper_tag ) . ' class="site-title">';
 	$title_tagline .= get_bloginfo( 'name' );
@@ -62,12 +62,12 @@ $alt_attribute = get_post_meta( $custom_logo_id, '_wp_attachment_image_alt', tru
 				echo ( $image ); //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				break;
 			case 'titleLogo':
-				echo '<div class="title-with-logo">';
+				echo '<div class="title-logo">';
 				echo ( $title_tagline . $image ); //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				echo '</div>';
 				break;
 			case 'logoTitle':
-				echo '<div class="title-with-logo">';
+				echo '<div class="title-logo">';
 				echo ( $image . $title_tagline ); //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				echo '</div>';
 				break;

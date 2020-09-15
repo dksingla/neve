@@ -27,7 +27,7 @@ $header_classes = apply_filters( 'nv_header_classes', 'header' );
 <div class="wrapper">
 	<?php neve_before_header_wrapper_trigger(); ?>
 	<header class="<?php echo esc_attr( $header_classes ); ?>" role="banner">
-		<a class="neve-skip-link show-on-focus" href="#content" tabindex="0">
+		<a class="neve-skip-link" href="#content" tabindex="0">
 			<?php echo __( 'Skip to content', 'neve' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 		</a>
 		<?php

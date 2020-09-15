@@ -388,27 +388,16 @@ h6 {
   font-size: 0.75em;
 }
 
-.show-on-focus {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: 0;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-  top: 0;
-  left: 0;
-}
-
-.show-on-focus:focus {
-  z-index: 20;
-  width: auto;
-  height: auto;
-  clip: auto;
-}
-
 a.neve-skip-link {
-  padding: 10px 20px;
-  top: 32px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 10px;
+  position: absolute;
+  overflow: hidden;
+}
+
+a.neve-skip-link:focus {
+  z-index: 20;
+  clip: auto;
 }
 
 .screen-reader-text {
@@ -613,13 +602,13 @@ blockquote.wp-block-quote.is-style-large cite {
   justify-content: center;
 }
 
-.site-logo .title-with-logo {
+.site-logo .title-logo {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.site-logo .title-with-logo > img:first-child, .site-logo .title-with-logo > div:first-child {
+.site-logo .title-logo > img:first-child, .site-logo .title-logo > div:first-child {
   margin-right: 10px;
 }
 
