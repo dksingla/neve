@@ -974,11 +974,9 @@ section.exclusive .tns-visually-hidden {
 }
 
 .woocommerce #respond input#submit.loading::after, .woocommerce a.button.loading::after, .woocommerce button.button.loading::after, .woocommerce input.button.loading::after {
-  display: block;
-  position: initial;
-  float: right;
-  margin-left: 5px;
+  display: inline-block;
   margin-top: 1px;
+  top: unset;
 }
 
 .nv-sidebar-wrap.shop-sidebar {

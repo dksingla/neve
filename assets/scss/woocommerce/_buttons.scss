@@ -71,11 +71,9 @@
 .woocommerce {
 	#respond input#submit.loading, a.button.loading, button.button.loading, input.button.loading {
 		&::after {
-			display: block;
-			position: initial;
-			float: right;
-			margin-left: 5px;
-			margin-top: 1px;
+		  display: inline-block;
+		  margin-top: 1px;
+		  top: unset;
 		}
 	}
 }
